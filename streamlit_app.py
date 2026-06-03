@@ -2,6 +2,7 @@
 import streamlit as st
 from snowflake.snowpark.functions import col
 import requests  
+import pandas
 
 # Name box
 name_on_order = st.text_input("Name on order:")
