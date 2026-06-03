@@ -19,7 +19,8 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 st.dataframe(data=my_dataframe,use_container_width=True)                                                                     
 st.stop()
 
-pd_df = my_dataframe.to_Pamdas()
+# Convert the snowpart Dataframe to a Pandas Dataframe so that we can use the LOC function
+pd_df = my_dataframe.to_Pandas()
 st.dataframe(pd_df)
 st.stop()
 
